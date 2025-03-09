@@ -22,10 +22,17 @@
     "strictPropertyInitialization": false,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "resolveJsonModule": true // Add this line
   },
   "exclude": [
     "node_modules",
     "cdk.out"
+  ],
+  "include": [
+    "bin/**/*",
+    "lib/**/*",
+    "lambdas/**/*",
+    
   ]
 }
