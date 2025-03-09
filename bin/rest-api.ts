@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import "source-map-support/register";
 import * as cdk from "aws-cdk-lib";
-import { RestAPIStack } from "../lib/rest-api-stack";
+import { RestApiStack } from "../lib/rest-api-stack"; // Changed from RestAPIStack to RestApiStack
 
 const app = new cdk.App();
-new RestAPIStack(app, "RestAPIStack", { env: { region: "eu-west-1" } });
+new RestApiStack(app, "RestAPIStack", { env: { region: "eu-west-1" } });
